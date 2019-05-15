@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header.jsx';
 import VehicleList from './VehicleList.jsx';
 
 import vehicles from '../../../vehicle-data.json';
@@ -26,6 +27,7 @@ class App extends Component {
     const { cars } = this.state;
     return (
       <div>
+        <Header />
         <VehicleList vehicles={cars} />
       </div>
     );
