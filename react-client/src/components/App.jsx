@@ -51,7 +51,7 @@ class App extends Component {
     const { cars } = this.state;
     return (
       <div>
-        <Header />
+        <Header vehicles={cars} />
         <SearchBar search={this.handleSearch} />
         <VehicleList vehicles={cars} />
       </div>

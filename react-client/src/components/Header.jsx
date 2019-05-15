@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Header = () => (
+const Header = ({ vehicles }) => (
   <div className="header">
+    {vehicles.length}
+    {' '}
 AVAILABLE VEHICLES
   </div>
 );
